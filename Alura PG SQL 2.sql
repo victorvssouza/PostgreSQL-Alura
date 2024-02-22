@@ -24,24 +24,30 @@ CREATE TABLE aluno_curso (
 	PRIMARY KEY (aluno_id, curso_id)
 );
 
-INSERT INTO aluno (primeiro_nome, ultimo_nome, data_nascimento) VALUES ('Luana', 'Souza', '2000-02-13');
-INSERT INTO aluno (primeiro_nome, ultimo_nome, data_nascimento) VALUES ('Danilo', 'Silva', '2000-02-10');
+INSERT INTO aluno (primeiro_nome, ultimo_nome, data_nascimento) VALUES 
+	('Luana', 'Souza', '2000-02-13'), 
+	('Danilo', 'Silva', '2000-02-10'), 
+	('Maria', 'Feitosa', '2000-02-09'), 
+	('Juliano', 'Cabral', '2000-02-08');
 
-INSERT INTO categoria (nome) VALUES ('Programação');
-INSERT INTO categoria (nome) VALUES ('Front-end');
-INSERT INTO categoria (nome) VALUES ('Data Science');
-INSERT INTO categoria (nome) VALUES ('Inteligência Artificial');
-INSERT INTO categoria (nome) VALUES ('DevOps');
-INSERT INTO categoria (nome) VALUES ('UX & Design');
-INSERT INTO categoria (nome) VALUES ('Mobile');
-INSERT INTO categoria (nome) VALUES ('Inovação & Gestão');
+INSERT INTO categoria (nome) VALUES 
+	('Programação'), 
+	('Front-end'), 
+	('Data Science'), 
+	('Inteligência Artificial'), 
+	('DevOps'), 
+	('UX & Design'), 
+	('Mobile'), 
+	('Inovação & Gestão');
 
-INSERT INTO curso (nome, categoria_id) VALUES ('Programação em Python - Introdução', 1);
-INSERT INTO curso (nome, categoria_id) VALUES ('Programação em Java - Introdução', 1);
-INSERT INTO curso (nome, categoria_id) VALUES ('Desenvolvendo Sistemas Web com Angular', 2);
-INSERT INTO curso (nome, categoria_id) VALUES ('Normalizando um Banco de Dados PostgreSQL', 3);
+INSERT INTO curso (nome, categoria_id) VALUES 
+	('Programação em Python - Introdução', 1),
+	('Programação em Java - Introdução', 1),
+	('Desenvolvendo Sistemas Web com Angular', 2),
+	('Normalizando um Banco de Dados PostgreSQL', 3);
 
-INSERT INTO aluno_curso VALUES (1, 1);
-INSERT INTO aluno_curso VALUES (1, 2);
-INSERT INTO aluno_curso VALUES (2, 2);
-INSERT INTO aluno_curso VALUES (2, 3);
+INSERT INTO aluno_curso VALUES 
+	(1, 1),
+	(1, 2),
+	(2, 2),
+	(2, 3);
